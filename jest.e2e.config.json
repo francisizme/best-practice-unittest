@@ -1,0 +1,26 @@
+{
+  "transform":{
+     "^.+\\.tsx?$":"ts-jest"
+  },
+  "setupFilesAfterEnv":[
+     "./jestE2eMockDependencies.js"
+  ],
+  "coverageReporters":[
+     "lcov",
+     "text",
+     "text-summary"
+  ],
+  "collectCoverageFrom":[
+     "<rootDir>/src/**/*.ts",
+     "!**/node_modules/**"
+  ],
+  "testRegex":"(\\e2e-(test|spec))\\.(ts|tsx|js)$",
+  "moduleFileExtensions":[
+     "ts",
+     "tsx",
+     "js",
+     "json"
+  ],
+  "testEnvironment":"node",
+  "verbose":true
+}
